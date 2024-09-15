@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediGrids - Medical & Hospital HTML Template.</title>
+    <!-- fav icon  -->
+    <link rel="icon" href="../images/favicon (1).svg" type="icon">
+    <!-- icon -->
+     <link rel="stylesheet" href="../dist/all.min.css" type="text/css">
+    <!-- remix -->
+    <link rel="stylesheet" href="remix/remixicon.css" type="text/css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../fonts/Merriweather/stylesheet.css" type="text/css">
+    <!-- swiper-css -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" type="text/css">
+    <link rel="stylesheet" href="jquery-ui.css" type="text/css">
+    <!-- slick-slider -->
+    <link rel="stylesheet" href="slick.css" type="text/css">
+    <link rel="stylesheet" href="slick-theme.css" type="text/css">
+    <!-- css2 -->
+    <link rel="stylesheet" href="css2.css" type="text/css">
+    <!-- main-css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+
+    <style>
+
+        .swiper {
+            width: 100%;
+            height: 100vh;
+        } 
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } 
+
+        .ui-widget-content {
+            border: none !important;
+        }
+     
+
+        .ui-widget-header {
+            border: none;
+            background-color: transparent !important;
+        }
+
+        .ui-state-active,
+        .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active {
+            background: #88C250;
+            padding: 20px !important;
+            border-bottom: 3px solid #006838 !important;
+        }
+
+        .ui-state-default {
+            border: 0 !important;
+        }
+
+        .ui-tabs .ui-tabs-nav li {
+            margin: 0 !important;
+            padding: 20px;
+        }
+
+       .ui-state-active a:hover, .ui-state-active a:link:hover, .ui-state-active a:visited:hover{
+        color:white;
+       }
+
+       .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor{
+        color: white !important;
+       }
+       .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor i{
+        background-color:white;
+        border:none;
+        color:#88C250;
+       }
+       .ui-widget-content a {
+        color:white;    
+     }
+#counter{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+  width: 100%;
+}
+#counter .item{
+  padding: 35px 40px;
+  margin: 10px;
+  text-align: center;
+  width:100%; 
+} 
+#counter .item .count{
+  color:white;
+  margin:10px 0;
+  font-size: 40px;
+  font-family: 'Merriweather', serif;
+  font-weight:600;
+}
+#counter .item h3{
+  color:white;
+  font-weight:600;
+}
+body{
+    font-family: "Poppins", sans-serif;    
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    padding: 14px 20px;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color:#006838;
+    color:white;
+    font-weight:600;
+    border:none;
+}
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+.slick-slide img{
+    display: inline-block !important;
+}
+.work .work-content i{
+    background-color:rgb(255 255 255 / 28%);
+}
+footer .footer-content input{
+    color:white !important;
+}
+ .container{
+    width:1320px;
+    margin:0 auto;
+    padding:0 15px;
+} 
+
+</style>
+
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header class="py-5 absolute top-0 left-0 w-full z-50">
+        <div class="container">
+            <div class="bg-white px-5 py-5 shadow">
+                <div class="flex justify-between items-center">
+                    <a href="javascript:void(0)"><img src="../images/logo.svg" alt="logo" width="200px"></a>
+                    <nav>
+                        <ul class="flex">
+                            <li><a href="#"
+                                    class="ms-7font-sans font-medium text-theme-color relative  before:absolute before:top-[53px] before:start-0 before:bg-theme-color before:w-full before:h-1">Home</a>
+                            </li>
+                            <li class="group/item relative">
+                                <a href="#"class="ms-7 font-sans font-medium hover:text-theme-color relative 
+                                 before:ease-linear before:duration-200  before:absolute before:top-[56px] 
+                                 before:start-0 before:bg-theme-color before:w-0 before:h-1 before:hover:w-full">Pages</a>
+                                    <ul class="group/edit min-w-[220px] opacity-0 shadow bg-white absolute top-full left-[43%] my-[36px] transition duration-700 ease-in-out hover:bs-slate-500  group-hover/item:opacity-100">
+                                        <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                             py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">About Us</a></li>
+                                        <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                            py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Appointment</a></li>
+                                        <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                            py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Time Table</a></li>
+                                        <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                                py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Testimonials</a></li>
+                                       <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                               py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Project Details</a></li>
+                                       <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                               py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Our Pricing</a></li>
+                                       <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                                py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Sign Up</a></li>
+                                       <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                               py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Login</a></li>
+                                         <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                               py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Faq</a></li>
+                                       <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                                py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Mail Success</a></li>
+                                       <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                               py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">404</a></li>
+                                      
+                                    </ul>   
+                            </li>
+                            <li class="group/item  relative">
+                                <a href="#" class="ms-7 font-sans font-medium hover:text-theme-color relative before:ease-linear before:duration-200  before:absolute before:top-[56px] before:start-0 before:bg-theme-color before:w-0 before:h-1 before:hover:w-full">Services</a>
+                                <ul class="group/edit min-w-[220px] opacity-0 shadow bg-white absolute top-full left-[43%] my-[36px] transition duration-700 ease-in-out hover:bs-slate-500  group-hover/item:opacity-100">
+                                    <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                         py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Services</a></li>
+                                    <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                        py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Service Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="group/item  relative"><a href="#" class="ms-7 font-sans font-medium hover:text-theme-color 
+                                relative before:ease-linear before:duration-200  before:absolute before:top-[56px] before:start-0 before:bg-theme-color before:w-0 before:h-1 before:hover:w-full">Doctors</a>
+                                <ul class="group/edit min-w-[220px] opacity-0 shadow bg-white absolute top-full left-[43%] my-[36px] transition duration-700 ease-in-out hover:bs-slate-500  group-hover/item:opacity-100">
+                                    <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                         py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Doctors</a></li>
+                                    <li class="nav-item w-full px-2"><a href="#" class="text-[#888] block w-full my-[10px]
+                                        py-[10px] px-[14px] text-[14px] relative z-10 hover:text-white before:absolute before:left-0 before:content-[''] before:bottom-0 before:bg-theme-color before:w-0 before:hover:w-full before:h-full before:ease-in before:duration-300 before:-z-10">Doctor Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"
+                                    class="ms-7 font-sans font-medium hover:text-theme-color relative before:ease-linear before:duration-200  before:absolute before:top-[56px] before:start-0 before:bg-theme-color before:w-0 before:h-1 before:hover:w-full">Blog</a>
+                            </li>
+                            <li><a href="#"
+                                    class="ms-7 font-sans font-medium hover:text-theme-color relative before:ease-linear before:duration-200  before:absolute before:top-[56px] before:start-0 before:bg-theme-color before:w-0 before:h-1 before:hover:w-full">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="javascript:void(0)"
+                        class="font-sans bg-theme-color py-4 px-7 text-white font-medium 
+                    relative z-10 before:content-[''] before:absolute before:top-0 before:start-0 before:ease-in before:duration-300 before:bg-dark-green before:-z-50 before:w-0 before:h-full before:hover:w-full">Book
+                        Appointment</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- back-to-top -->
+
+    <a href="javascript:void(0)" class="back-to-top fixed w-[45px] h-[45px] bg-theme-color text-center z-20 flex justify-center items-center cursor-pointer text-white right-[30px] text-3xl bottom-[30px]">
+        <i class="ri-arrow-up-s-line"></i>    
+    </a>
+
+    <!-- banner -->
+
+    <main>
+        <section class="py-28 bg-dark-green w-full h-[754px] relative flex flex-wrap  items-center z-20">
+            <div class="shape">
+                <img src="../images/05.svg" alt="05" width="200px" class="absolute top-[120px] start-[-90px] z-10">
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="flex flex-wrap items-center">
+                                <div class="w-6/12">
+                                    <h2
+                                        class="text-4xl text-white font-bold font-Merriweather w-[345px] leading-[50px] mb-6 z-50">
+                                        Find A Doctor & Book Appointment</h2>
+                                    <p class="text-white font-normal w-[660px] mb-10">Since the first days of operation
+                                        of MediGrids, our teaming has been focused on
+                                        building a high-qualities medicals service by MediGrids.</p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block text-black hover:text-white font-sans bg-white py-4 px-7 
+                                        font-medium shadow  relative z-10 before:absolute before:content-[''] before:top-0 before:start-0 before:bg-theme-color before:-z-10 before:w-0 before:h-full  before:ease-in before:duration-300 hover:before:w-full">Book
+                                        Appointment</a>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block text-black ms-2 hover:text-white font-sans bg-white py-4 px-7 
+                                        font-medium shadow  relative z-10 before:absolute before:content-[''] before:top-0 before:start-0 before:bg-theme-color before:-z-10 before:w-0 before:h-full  before:ease-in before:duration-300 hover:before:w-full">About
+                                        Us</a>
+                                </div>
+                                <div class="w-6/12">
+                                    <img src="../images/02.png" alt="slider-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="flex flex-wrap items-center">
+                                <div class="w-6/12">
+                                    <h2
+                                        class="text-4xl text-white font-bold font-Merriweather w-[76%] leading-[50px] mb-6 z-50">
+                                        Superior solutions that help you to shine.</h2>
+                                    <p class="text-white font-normal w-[660px] mb-10">Since the first days of operation
+                                        of MediGrids, our teaming has been focused on
+                                        building a high-qualities medicals service by MediGrids.</p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block text-black hover:text-white font-sans bg-white py-4 px-7 
+                                            font-medium shadow  relative z-10 before:absolute before:content-[''] before:top-0 before:start-0 before:bg-theme-color before:-z-10 before:w-0 before:h-full  before:ease-in before:duration-300 hover:before:w-full">Book
+                                        Appointment</a>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block text-black ms-2 hover:text-white font-sans bg-white py-4 px-7 
+                                            font-medium shadow  relative z-10 before:absolute before:content-[''] before:top-0 before:start-0 before:bg-theme-color before:-z-10 before:w-0 before:h-full  before:ease-in before:duration-300 hover:before:w-full">About
+                                        Us</a>
+                                </div>
+                                <div class="w-6/12">
+                                    <img src="../images/slider-2.png" alt="slider-2" class="w-[90%]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="flex flex-wrap items-center">
+                                <div class="w-6/12">
+                                    <h2
+                                        class="text-4xl text-white font-bold font-Merriweather w-[345px] leading-[50px] mb-6 z-50">
+                                        We only give Best care to your eyes</h2>
+                                    <p class="text-white font-normal w-[660px] mb-10">Since the first days of operation
+                                        of MediGrids, our teaming has been focused on
+                                        building a high-qualities medicals service by MediGrids.</p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block text-black hover:text-white font-sans bg-white py-4 px-7 
+                                            font-medium shadow  relative z-10 before:absolute before:content-[''] before:top-0 before:start-0 before:bg-theme-color before:-z-10 before:w-0 before:h-full  before:ease-in before:duration-300 hover:before:w-full">Book
+                                        Appointment</a>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block text-black ms-2 hover:text-white font-sans bg-white py-4 px-7 
+                                            font-medium shadow  relative z-10 before:absolute before:content-[''] before:top-0 before:start-0 before:bg-theme-color before:-z-10 before:w-0 before:h-full  before:ease-in before:duration-300 hover:before:w-full">About
+                                        Us</a>
+                                </div>
+                                <div class="w-6/12">
+                                    <img src="../images/slider-3.png" alt="slider-2" class="w-[90%]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- form -->
+
+        <section class="py-24">
+            <div class="container">
+                <div class="w-6/12">
+                  <div class="relative">
+                        <span class="text-[80px] uppercase font-bold  font-Merriweather absolute top-[-40px] left-0 -z-10 opacity-[0.4] text-[#eee]">
+                            Appointment</span>
+                        <h2 class="text-4xl text-black font-black font-Merriweather z-10">Book An Appointment</h2>
+                  </div>
+                    <p class="text-text-color w-[610px] my-7">Please feel welcome to contact our friendly reception
+                        staff with any general or medical
+                        enquiry. Our doctors will receive or return any urgent calls.</p>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-1/4">
+                        <div class="appointment-input relative px-2">
+                            <div class="absolute right-4 top-[30%]">
+                                <i class="ri-map-pin-user-fill inline-block text-gray-400  text-xl"></i>
+                            </div>
+                            <input type="text" placeholder="Your Name" class="text-[14px] w-full h-[55px] border border-solid border-[#eee] ps-[25px]">
+                        </div>
+                    </div>
+                    <div class="w-1/4">
+                        <div class="appointment-input relative px-2">
+                            <div class="absolute right-4 top-[30%]">
+                                <i class="ri-mail-line text-gray-400 inline-block text-lg"></i>
+                            </div>
+                            <input type="text" placeholder="Your Email" class="text-[14px] w-full h-[55px] border border-solid border-[#eee] ps-[25px]">
+                        </div>
+                    </div>
+                    <div class="w-1/4">
+                       <div class="ms-2">
+                            <select name="department" id="department" class="border py-4 w-full ps-[25px] text-gray-400">
+                                <option value="none">Department</option>
+                                <option value="none">General Surgery</option>
+                                <option value="none">Gastroenterology</option>
+                                <option value="none">Nutrition & Dietetics</option>
+                                <option value="none">Cardiology</option>
+                                <option value="none">Neurology</option>
+                                <option value="none">Pediatric</option>
+                            </select>
+                       </div>
+                    </div>
+                    <div class="w-1/4">
+                        <a href="javascript:void(0)" class="ms-4 text-center  w-full inline-block  font-sans bg-theme-color py-[14px] px-7 text-white font-medium 
+                        relative z-10 before:content-[''] before:absolute before:top-0 before:start-0
+                         before:ease-in before:duration-300 before:bg-dark-green before:-z-50 before:w-0 before:h-full before:hover:w-full">Get
+                            Appointment</a>
+                    </div> 
+                </div>
+        </section>
+
+        <!-- About -->
+
+        <section class="py-24 bg-bg-tempary">
+            <div class="container">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-6/12">
+                        <div class="relative">
+                            <img src="../images/about.png" alt="about" width="100%">
+                            <i class="ri-play-line shadow  absolute top-[40%] left-[40%] animate-bounce text-theme-color flex justify-center 
+                            items-center text-4xl rounded-full bg-white w-20 h-20"></i>
+                        </div>
+                    </div>
+                    <div class="w-6/12">
+                        <h5 class="text-white bg-theme-color py-2 font-semibold  px-6 inline-block rounded-lg mb-5">About</h5>
+                        <h2 class="font-Merriweather text-4xl font-bold w-[620px] leading-[50px]">Thousands Of
+                            Specialities For Any Type Diagnostic.</h2>
+                        <p class="text-text-color w-[565px] my-5 font-Poppins">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eius mod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea
+                            commodo consequat.</p>
+                        <div class="flex">
+                            <ul>
+                                <li class="text-text-color font-Poppins"><i
+                                        class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Conducts eye
+                                    health checkups</li>
+                                <li class="text-text-color font-Poppins"><i
+                                        class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Best lasik
+                                    treatment</li>
+                                <li class="text-text-color font-Poppins"><i
+                                        class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Treats minor
+                                    illnesses</li>
+                            </ul>
+                            <ul class="ms-10">
+                                <li class="text-text-color font-Poppins"><i
+                                        class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Special eye
+                                    exam</li>
+                                <li class="text-text-color font-Poppins"><i
+                                        class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Contact lens
+                                    service</li>
+                                <li class="text-text-color font-Poppins"><i
+                                        class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Special Retina
+                                    exam</li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0)" class=" inline-block font-Poppins  mt-10  bg-theme-color py-4 px-7 text-white font-medium relative z-10 before:content-['']
+                            before:absolute before:top-0 before:start-0 before:ease-in before:duration-300 before:bg-dark-green before:-z-50
+                            before:w-0 before:h-full before:hover:w-full">More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Department -->
+
+        <section class="py-24">
+            <div class="container">
+                <div class="relative text-center">
+                    <span class="absolute top-[-50px] uppercase font-Merriweather font-bold left-[25%] text-[80px] opacity-[0.4] text-[#eee]">DEPARTMENTS</span>
+                    <h2 class="text-4xl pb-5 mb-5 font-Merriweather font-bold before:absolute before:content-[''] before:bottom-[-2px] before:ml-[-25px] before:left-[50%] before:bg-theme-color before:w-[50px] before:rounded-md before:h-[4px] ">
+                        Specialities Available At MediGrids</h2>
+                </div>
+                <p class="text-center text-text-color mb-12 font-Poppins w-[45%] mx-auto">There are many variations
+                    of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                <div id="tabs">
+                    <ul>
+                        <li class="text-base group"><a href="#tabs-1"
+                                class="font-Poppins inline-block group-hover:text-[#88C250]  group-hover:font-[500]">
+                                <i
+                                class="ri-heart-line mx-3 text-lg border p-3 rounded-full group-hover:text-white  group-hover:bg-[#88C250]"></i>Cardiology</a>
+                        </li>
+                        <li class="text-base group"><a href="#tabs-2" class="font-Poppins inline-block group-hover:text-[#88C250]  group-hover:font-[500]"><i
+                                class="ri-syringe-line mx-3 text-lg border p-2 rounded-full group-hover:text-white  group-hover:bg-[#88C250]"></i>Stomatology</a>
+                        </li>
+                        <li class="text-base group"><a href="#tabs-3" class="font-Poppins inline-block group-hover:text-[#88C250]  group-hover:font-[500]"><i
+                                class="ri-briefcase-5-line mx-3 text-lg border p-2 rounded-full group-hover:text-white  group-hover:bg-[#88C250]"></i>Radiology</a>
+                        </li>
+                        <li class="text-base group"><a href="#tabs-4" class="font-Poppins inline-block group-hover:text-[#88C250]  group-hover:font-[500]"><i
+                                class="ri-pulse-line mx-3 text-lg border p-2 rounded-full  group-hover:text-white  group-hover:bg-[#88C250]"></i>Neurology</a></li>
+                        <li class="text-base group"><a href="#tabs-5" class="font-Poppins inline-block group-hover:text-[#88C250]  group-hover:font-[500]"><i
+                                class="ri-git-fork-line mx-3 text-lg border p-2 rounded-full  group-hover:text-white  group-hover:bg-[#88C250]"></i>Ophthalmology</a>
+                        </li>
+                    </ul>
+                    <div class="mt-12" id="tabs-1">
+                        <div class="flex flex-wrap items-center">
+                            <div class="w-2/4">
+                                <img src="../images/image1.jpg" alt="image1" class="w-full">
+                            </div>
+                            <div class="w-2/4">
+                                <h2 class="font-Merriweather text-4xl font-bold ms-10 mt-7 mb-9">Cardiology</h2>
+                                <ul class="ms-10">
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Get the
+                                        oars in the water and start rowing</li>
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Introspection
+                                        is the trick.</li>
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Most people
+                                        believe that success is difficult.</li>
+                                </ul>
+                                <p class="ms-10 text-text-color font-Poppins mt-10 w-[76%] leading-relaxed">For those of
+                                    you who are serious about having more, doing more,
+                                    giving more and being more, success is achievable with some
+                                    understanding of what to do, some discipline around planning and
+                                    execution of those plans and belief that you can achieve your desires.</p>
+                                <p class="text-text-color font-Poppins ms-10 mt-8 w-[78%]">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Cras non leo nunc. Vivamus lacinia massa nec sem
+                                    sagittis.</p>
+                                <a href="javascript:void(0)" class="inline-block mt-5 ms-10 font-sans bg-theme-color py-4 px-7  font-medium 
+                        relative z-10 before:content-[''] before:absolute before:top-0 before:start-0 before:ease-in before:duration-300 text-white
+                        before:bg-dark-green before:-z-50 before:w-0 before:h-full before:hover:w-full">View
+                                    Speciality</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12" id="tabs-2">
+                        <div class="flex flex-wrap items-center">
+                            <div class="w-2/4">
+                                <img src="../images/image2.jpg" alt="image1" class="w-full">
+                            </div>
+                            <div class="w-2/4">
+                                <h2 class="font-Merriweather text-4xl font-bold ms-10 mt-7 mb-9">Stomatology</h2>
+                                <ul class="ms-10">
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Get the
+                                        oars in the water and start rowing</li>
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Introspection
+                                        is the trick.</li>
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Most people
+                                        believe that success is difficult.</li>
+                                </ul>
+                                <p class="ms-10 text-text-color font-Poppins mt-10 w-[76%] leading-relaxed">For those of
+                                    you who are serious about having more, doing more,
+                                    giving more and being more, success is achievable with some
+                                    understanding of what to do, some discipline around planning and
+                                    execution of those plans and belief that you can achieve your desires.</p>
+                                <p class="text-text-color font-Poppins ms-10 mt-8 w-[78%]">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Cras non leo nunc. Vivamus lacinia massa nec sem
+                                    sagittis.</p>
+                                <a href="javascript:void(0)" class="inline-block mt-5 ms-10 font-sans bg-theme-color py-4 px-7 text-white font-medium 
+                        relative z-10 before:content-[''] before:absolute before:top-0 before:start-0 before:ease-in before:duration-300 
+                        before:bg-dark-green before:-z-50 before:w-0 before:h-full before:hover:w-full">View
+                                    Speciality</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 " id="tabs-3">
+                        <div class="flex flex-wrap items-center">
+                            <div class="w-2/4">
+                                <img src="../images/image3.jpg" alt="image1" class="w-full">
+                            </div>
+                            <div class="w-2/4">
+                                <h2 class="font-Merriweather text-4xl font-bold ms-10 mt-7 mb-9">Radiology</h2>
+                                <ul class="ms-10">
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Get the
+                                        oars in the water and start rowing</li>
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Introspection
+                                        is the trick.</li>
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Most people
+                                        believe that success is difficult.</li>
+                                </ul>
+                                <p class="ms-10 text-text-color font-Poppins mt-10 w-[76%] leading-relaxed">For those of
+                                    you who are serious about having more, doing more,
+                                    giving more and being more, success is achievable with some
+                                    understanding of what to do, some discipline around planning and
+                                    execution of those plans and belief that you can achieve your desires.</p>
+                                <p class="text-text-color font-Poppins ms-10 mt-8 w-[78%]">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Cras non leo nunc. Vivamus lacinia massa nec sem
+                                    sagittis.</p>
+                                <a href="javascript:void(0)" class="inline-block mt-5 ms-10 font-sans bg-theme-color py-4 px-7 text-white font-medium 
+                        relative z-10 before:content-[''] before:absolute before:top-0 before:start-0 before:ease-in before:duration-300 
+                        before:bg-dark-green before:-z-50 before:w-0 before:h-full before:hover:w-full">View
+                                    Speciality</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12" id="tabs-4">
+                        <div class="flex flex-wrap items-center">
+                            <div class="w-2/4">
+                                <img src="../images/image4.jpg" alt="image1" class="w-full">
+                            </div>
+                            <div class="w-2/4">
+                                <h2 class="font-Merriweather text-4xl font-bold ms-10 mt-7 mb-9">Neurology</h2>
+                                <ul class="ms-10">
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Get the
+                                        oars in the water and start rowing</li>
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Introspection
+                                        is the trick.</li>
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Most people
+                                        believe that success is difficult.</li>
+                                </ul>
+                                <p class="ms-10 text-text-color font-Poppins mt-10 w-[76%] leading-relaxed">For those of
+                                    you who are serious about having more, doing more,
+                                    giving more and being more, success is achievable with some
+                                    understanding of what to do, some discipline around planning and
+                                    execution of those plans and belief that you can achieve your desires.</p>
+                                <p class="text-text-color font-Poppins ms-10 mt-8 w-[78%]">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Cras non leo nunc. Vivamus lacinia massa nec sem
+                                    sagittis.</p>
+                                <a href="javascript:void(0)" class="inline-block mt-5 ms-10 font-sans bg-theme-color py-4 px-7 text-white font-medium 
+                        relative z-10 before:content-[''] before:absolute before:top-0 before:start-0 before:ease-in before:duration-300 
+                        before:bg-dark-green before:-z-50 before:w-0 before:h-full before:hover:w-full">View
+                                    Speciality</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12" id="tabs-5">
+                        <div class="flex flex-wrap items-center">
+                            <div class="w-2/4">
+                                <img src="../images/image5.jpg" alt="image1" class="w-full">
+                            </div>
+                            <div class="w-2/4">
+                                <h2 class="font-Merriweather text-4xl font-bold ms-10 mt-7 mb-9">Ophthalmology</h2>
+                                <ul class="ms-10">
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Get the
+                                        oars in the water and start rowing</li>
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Introspection
+                                        is the trick.</li>
+                                    <li class="text-text-color font-Poppins"><i
+                                            class="ri-checkbox-line ms-0 mx-2 text-theme-color text-2xl"></i>Most people
+                                        believe that success is difficult.</li>
+                                </ul>
+                                <p class="ms-10 text-text-color font-Poppins mt-10 w-[76%] leading-relaxed">For those of
+                                    you who are serious about having more, doing more,
+                                    giving more and being more, success is achievable with some
+                                    understanding of what to do, some discipline around planning and
+                                    execution of those plans and belief that you can achieve your desires.</p>
+                                <p class="text-text-color font-Poppins ms-10 mt-8 w-[78%]">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Cras non leo nunc. Vivamus lacinia massa nec sem
+                                    sagittis.</p>
+                                <a href="javascript:void(0)" class="inline-block mt-5 ms-10 font-sans bg-theme-color py-4 px-7 text-white font-medium 
+                        relative z-10 before:content-[''] before:absolute before:top-0 before:start-0 before:ease-in before:duration-300 
+                        before:bg-dark-green before:-z-50 before:w-0 before:h-full before:hover:w-full">View
+                                    Speciality</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Counter -->
+
+        <section class="py-24 bg-[url('../images/pattern.png')] w-full bg-cover bg-no-repeat bg-center bg-dark-green">
+            <div class="container">
+                <div id="counter">
+                    <div class="flex flex-wrap">
+                        <div class="w-3/12">
+                            <div class="item">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 inline-block bg-white stroke-dark-green w-14 h-14 p-4 shadow">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                                </svg>                                                              
+                                <h1 class="count" data-number="1250" ></h1>
+                                <h3 class="text">Hospital Rooms</h3>
+                             </div>
+                        </div>
+                        <div class="w-3/12">
+                            <div class="item">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 inline-block bg-white stroke-dark-green w-14 h-14 p-4 shadow">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                                  </svg>                                       
+                                <h1 class="count" data-number="350" ></h1>
+                                <h3 class="text">Specialist Doctors</h3>
+                             </div>
+                        </div>
+                        <div class="w-3/12">
+                            <div class="item">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 inline-block bg-white stroke-dark-green w-14 h-14 p-4 shadow">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                                  </svg>                 
+                                <h1 class="count" data-number="1500" ></h1>
+                                <h3 class="text">Happy Patients</h3>
+                             </div>
+                        </div>
+                        <div class="w-3/12">
+                            <div class="item">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 inline-block bg-white stroke-dark-green  w-14 h-14 p-4 shadow">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125
+                                    .504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125
+                                    -1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                                  </svg>                                  
+                                <h1 class="count" data-number="35"></h1>
+                                <h3 class="text">Years of Experience</h3>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+
+        <section class="py-24">
+            <div class="container">
+                <div class="relative text-center">
+                    <span class="absolute top-[-50px] left-[35%] text-[80px] opacity-[0.4] text-[#eee] font-Merriweather font-bold">SERVICES</span>
+                    <h2 class=" text-4xl pb-5 mb-5 font-Merriweather font-bold
+                     before:absolute before:content-[''] before:bottom-[-2px] before:left-[50%] before:ml-[-25px]
+                      before:bg-theme-color before:w-[50px] before:rounded-md before:h-[4px] ">
+                     Services Provided By MediGrids</h2>
+                </div>
+                <p class="text-center mb-12 text-text-color font-Poppins w-[45%] mx-auto">There are many variations
+                    of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                <div class="flex flex-wrap">
+                    <div class="w-4/12">
+                        <div class="group">
+                           <div class="bg-bg-tempary border p-8 group-hover:bg-dark-green relative overflow-hidden duration-700">
+                            <img src="../images/shape1.svg" alt="shape1" class="h-[100px] absolute top-[-60px] right-[50px] opacity-0 invisible scale-0 group-hover:scale-150  group-hover:duration-300 group-hover:ease-in  group-hover:opacity-100 group-hover:visible">
+                            <img src="../images/shape2.svg" alt="shape2" class="h-[100px] absolute bottom-0 right-[-30px] opacity-0 invisible  group-hover:duration-300 group-hover:ease-in group-hover:opacity-100 group-hover:visible group-hover:right-0">
+                                <i class="fa-solid fa-truck-medical text-2xl text-white bg-dark-green w-16 h-16  text-center flex justify-center
+                                 items-center group-hover:bg-white group-hover:text-dark-green"></i>
+                                <h4 class="text-xl font-Merriweather font-bold mt-5 mb-4 group-hover:text-white">Fast Ambulance</h4>
+                                <p class="text-text-color group-hover:text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="w-4/12">
+                        <div class="group">
+                            <div class="bg-bg-tempary border p-8 group-hover:bg-dark-green relative overflow-hidden duration-700">
+                                <img src="../images/shape1.svg" alt="shape1" class="h-[100px] absolute top-[-60px] right-[50px] opacity-0 invisible scale-0 group-hover:scale-150  group-hover:duration-300 group-hover:ease-in  group-hover:opacity-100 group-hover:visible">
+                                <img src="../images/shape2.svg" alt="shape2" class="h-[100px] absolute bottom-0 right-[-30px] opacity-0 invisible  group-hover:duration-300 group-hover:ease-in group-hover:opacity-100 group-hover:visible group-hover:right-0">
+                                <i class="fa-solid fa-stethoscope text-2xl text-white bg-dark-green p-5 w-16 h-16  text-center flex justify-center items-center
+                                group-hover:bg-white group-hover:text-dark-green"></i>
+                                 <h4 class="text-xl font-Merriweather font-bold mt-5 mb-4 group-hover:text-white">Dental Specialist</h4>
+                                 <p class="text-text-color group-hover:text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="w-4/12">
+                        <div class="group">
+                            <div class="bg-bg-tempary border p-8 group-hover:bg-dark-green relative overflow-hidden duration-700">
+                                <img src="../images/shape1.svg" alt="shape1" class="h-[100px] absolute top-[-60px] right-[50px] opacity-0 invisible scale-0 group-hover:scale-150  group-hover:duration-300 group-hover:ease-in  group-hover:opacity-100 group-hover:visible">
+                                <img src="../images/shape2.svg" alt="shape2" class="h-[100px] absolute bottom-0 right-[-30px] opacity-0 invisible  group-hover:duration-300 group-hover:ease-in group-hover:opacity-100 group-hover:visible group-hover:right-0">
+                                <i class="fa-solid fa-microscope text-2xl text-white bg-dark-green p-5 w-16 h-16  text-center flex justify-center items-center group-hover:bg-white group-hover:text-dark-green"></i>
+                                 <h4 class="text-xl font-Merriweather font-bold mt-5 mb-4 group-hover:text-white">Modern Laboratory</h4>
+                                 <p class="text-text-color group-hover:text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="w-4/12">
+                        <div class="group"> 
+                            <div class="bg-bg-tempary border p-8 group-hover:bg-dark-green relative overflow-hidden duration-700">
+                                <img src="../images/shape1.svg" alt="shape1" class="h-[100px] absolute top-[-60px] right-[50px] opacity-0 invisible scale-0 group-hover:scale-150  group-hover:duration-300 group-hover:ease-in  group-hover:opacity-100 group-hover:visible">
+                                <img src="../images/shape2.svg" alt="shape2" class="h-[100px] absolute bottom-0 right-[-30px] opacity-0 invisible  group-hover:duration-300 group-hover:ease-in group-hover:opacity-100 group-hover:visible group-hover:right-0">
+                                <i class="fa-regular fa-user text-2xl text-white bg-dark-green p-5 w-16 h-16  text-center flex justify-center items-center group-hover:bg-white group-hover:text-dark-green"></i>
+                                 <h4 class="text-xl font-Merriweather font-bold mt-5 mb-4 group-hover:text-white">Children Center</h4>
+                                 <p class="text-text-color group-hover:text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="w-4/12">
+                        <div class="group">
+                            <div class="bg-bg-tempary border p-8 group-hover:bg-dark-green relative overflow-hidden duration-700">
+                                <img src="../images/shape1.svg" alt="shape1" class="h-[100px] absolute top-[-60px] right-[50px] opacity-0 invisible scale-0 group-hover:scale-150  group-hover:duration-300 group-hover:ease-in  group-hover:opacity-100 group-hover:visible">
+                                <img src="../images/shape2.svg" alt="shape2" class="h-[100px] absolute bottom-0 right-[-30px] opacity-0 invisible  group-hover:duration-300 group-hover:ease-in group-hover:opacity-100 group-hover:visible group-hover:right-0">
+                                <i class="fa-regular fa-heart text-2xl text-white bg-dark-green p-5 w-16 h-16  text-center flex justify-center items-center group-hover:bg-white group-hover:text-dark-green"></i>
+                                 <h4 class="text-xl font-Merriweather font-bold mt-5 mb-4 group-hover:text-white">Heart Surgery</h4>
+                                 <p class="text-text-color group-hover:text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="w-4/12">
+                        <div class="group">
+                            <div class="bg-bg-tempary border p-8 group-hover:bg-dark-green relative overflow-hidden duration-700">
+                                <img src="../images/shape1.svg" alt="shape1" class="h-[100px] absolute top-[-60px] right-[50px] opacity-0 invisible scale-0 group-hover:scale-150  group-hover:duration-300 group-hover:ease-in  group-hover:opacity-100 group-hover:visible">
+                                <img src="../images/shape2.svg" alt="shape2" class="h-[100px] absolute bottom-0 right-[-30px] opacity-0 invisible  group-hover:duration-300 group-hover:ease-in group-hover:opacity-100 group-hover:visible group-hover:right-0">
+                                <i class="fa-regular fa-hand text-2xl text-white bg-dark-green p-5 w-16 h-16  text-center flex justify-center items-center group-hover:bg-white group-hover:text-dark-green "></i>
+                                 <h4 class="text-xl font-Merriweather font-bold mt-5 mb-4 group-hover:text-white">Care Advice</h4>
+                                 <p class="text-text-color group-hover:text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+
+        <section class=" py-24 bg-[url('../images/bg1.png')] bg-cover bg-center bg-no-repeat w-full">
+            <div class="container">
+                <div class="relative text-center">
+                    <span class="absolute top-[-50px] font-Merriweather font-bold left-[34%] text-[80px] opacity-[0.4] text-[#eee]">PROJECTS</span>
+                    <h2 class="text-4xl pb-5 mb-5 font-Merriweather font-bold
+                     before:absolute before:content-[''] before:bottom-[-2px] before:left-[50%] before:ml-[-25px]
+                      before:bg-theme-color before:w-[50px] before:rounded-md before:h-[4px] ">Here is Some of our<br/>
+                      Latest Cases</h2>
+                </div>
+                <p class="text-center  mb-12 text-text-color font-Poppins w-[45%] mx-auto">There are many variations
+                    of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+               <nav>
+                    <ul class="nav-tabs flex justify-center">
+                        <li class="nav-item text-base"><a href="#tabs-6"
+                        class="nav-link active font-Poppins inline-block text-indigo-black font-medium py-2 px-5 border mr-3">Show All</a></li>
+                        <li class="nav-item text-base"><a href="#tabs-7"
+                        class=" nav-link font-Poppins inline-block text-indigo-black font-medium py-2 px-5 border mr-3">Cardiology</a></li>
+                        <li class="nav-item text-base"><a href="#tabs-8"
+                        class=" nav-link font-Poppins inline-block text-indigo-black font-medium py-2 px-5 border mr-3">Diabetes</a></li>
+                        <li class="nav-item text-base"><a href="#tabs-9"
+                        class="nav-link font-Poppins inline-block text-indigo-black font-medium py-2 px-5 border mr-3">Pediatric</a></li>
+                        <li class="nav-item text-base"><a href="#tabs-10"
+                        class="nav-link font-Poppins inline-block text-indigo-black font-medium py-2 px-5 border mr-3">Neurosurgery</a></li>
+                    </ul>
+               </nav>
+               <div class="tab-content">
+                    <div id="tabs-6" class="tab-pane active mt-12">
+                        <div class="flex flex-wrap">
+                            <div class="w-4/12">
+                                <div class="group">
+                                     <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                             before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                     ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                     <div class="overflow-hidden">
+                                        <img src="../images/pf1.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                    </div>
+                                    <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                        <h5 class="text-lg text-white font-medium ps-7 pt-7">Cardiac Surgery</h5>
+                                        <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Qualified Physicians</a></h3>
+                                    </div>
+                                    <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                             invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                     <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                             hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-4/12">
+                                <div class="group">
+                                    <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                            before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                    ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                    <div class="overflow-hidden">
+                                       <img src="../images/pf2.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                   </div>
+                                   <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                       <h5 class="text-lg text-white font-medium ps-7 pt-7">Cloud Services</h5>
+                                       <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Personalized Medication</a></h3>
+                                   </div>
+                                   <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                            invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                    <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                            hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                   </a>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="w-4/12">
+                                <div class="group">
+                                    <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                            before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                    ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                    <div class="overflow-hidden">
+                                       <img src="../images/pf3.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                   </div>
+                                   <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                       <h5 class="text-lg text-white font-medium ps-7 pt-7">Dietetics</h5>
+                                       <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Excellence And Safety</a></h3>
+                                   </div>
+                                   <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                            invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                    <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                            hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                   </a>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="w-4/12">
+                                <div class="group">
+                                    <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                            before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                    ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                    <div class="overflow-hidden">
+                                       <img src="../images/pf4.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                   </div>
+                                   <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                       <h5 class="text-lg text-white font-medium ps-7 pt-7">Eye Surgery</h5>
+                                       <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Dry Eye Surgery</a></h3>
+                                   </div>
+                                   <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                            invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                    <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                            hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                   </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="w-4/12">
+                                <div class="group">
+                                    <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                            before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                    ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                    <div class="overflow-hidden">
+                                       <img src="../images/pf5.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                   </div>
+                                   <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                       <h5 class="text-lg text-white font-medium ps-7 pt-7">Surgical</h5>
+                                       <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Surgical Procedure</a></h3>
+                                   </div>
+                                   <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                            invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                    <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                            hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                   </a>
+                                  </div>
+                                 </div>
+                            </div>
+                            <div class="w-4/12">
+                                <div class="group">
+                                    <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                            before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                    ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                    <div class="overflow-hidden">
+                                       <img src="../images/pf6.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                   </div>
+                                   <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                       <h5 class="text-lg text-white font-medium ps-7 pt-7">Eye Surgery</h5>
+                                       <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Dry Eye Surgery</a></h3>
+                                   </div>
+                                   <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                            invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                    <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                            hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                   </a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-7" class="tab-pane mt-12">
+                        <div class="flex flex-wrap">
+                            <div class="w-4/12">
+                                <div class="group">
+                                    <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                            before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                    ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                    <div class="overflow-hidden">
+                                       <img src="../images/pf4.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                   </div>
+                                   <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                       <h5 class="text-lg text-white font-medium ps-7 pt-7">Eye Surgery</h5>
+                                       <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Dry Eye Surgery</a></h3>
+                                   </div>
+                                   <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                            invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                    <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                            hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                   </a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-8" class="tab-pane mt-12">
+                        <div class="flex flex-wrap">
+                            <div class="w-4/12">
+                                <div class="group">
+                                     <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                             before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                     ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                     <div class="overflow-hidden">
+                                        <img src="../images/pf1.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                    </div>
+                                    <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                        <h5 class="text-lg text-white font-medium ps-7 pt-7">Cardiac Surgery</h5>
+                                        <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Qualified Physicians</a></h3>
+                                    </div>
+                                    <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                             invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                     <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                             hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-4/12">
+                                <div class="group">
+                                    <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                            before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                    ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                    <div class="overflow-hidden">
+                                       <img src="../images/pf2.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                   </div>
+                                   <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                       <h5 class="text-lg text-white font-medium ps-7 pt-7">Cloud Services</h5>
+                                       <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Personalized Medication</a></h3>
+                                   </div>
+                                   <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                            invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                    <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                            hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                   </a>
+                                 </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-9" class="tab-pane mt-12">
+                        <div class="flex flex-wrap">
+                            <div class="w-4/12">
+                                <div class="group">
+                                    <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                            before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                    ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                    <div class="overflow-hidden">
+                                       <img src="../images/pf3.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                   </div>
+                                   <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                       <h5 class="text-lg text-white font-medium ps-7 pt-7">Dietetics</h5>
+                                       <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Excellence And Safety</a></h3>
+                                   </div>
+                                   <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                            invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                    <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                            hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                   </a>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="w-4/12">
+                                <div class="group">
+                                    <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                            before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                    ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                    <div class="overflow-hidden">
+                                       <img src="../images/pf5.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                                   </div>
+                                   <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                       <h5 class="text-lg text-white font-medium ps-7 pt-7">Surgical</h5>
+                                       <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Surgical Procedure</a></h3>
+                                   </div>
+                                   <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                            invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                    <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                            hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                                   </a>
+                                  </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-10" class="tab-pane mt-12">
+                        <div class="w-4/12">
+                            <div class="group">
+                                <div class="mr-5 mb-5 relative before:absolute before:top-0 before:right-0 before:content-['']
+                                        before:bg-hover-bg before:w-0 before:opacity-80 before:h-full group-hover:before:duration-500 
+                                ``````````group-hover:before:ease-linear group-hover:before:w-full">
+                                <div class="overflow-hidden">
+                                   <img src="../images/pf6.jpg" alt="pf1" class="w-full duration-500 ease-linear">
+                               </div>
+                               <div class="absolute top-0 left-3 invisible opacity-0 duration-300 group-hover:opacity-100 group-hover:left-0 group-hover:visible">
+                                   <h5 class="text-lg text-white font-medium ps-7 pt-7">Eye Surgery</h5>
+                                   <h3><a href="javascript:void(0)" class="text-white text-xl font-Merriweather ps-7 pt-3 font-semibold">Dry Eye Surgery</a></h3>
+                               </div>
+                               <a href="javascript:void(0)" class="opacity-0 absolute bottom-4 left-6 inline-block ms-3 
+                                        invisible duration-300 group-hover:opacity-100 group-hover:visible group-hover:ms-0">
+                                <i class="ri-link  text-2xl text-white w-10 h-10 border flex justify-center items-center 
+                                        hover:border-0 hover:bg-white hover:text-dark-green duration-300"></i>
+                               </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+
+        <!-- review -->
+
+        <section class="bg-dark-green w-full h-full py-24"> 
+            <div class="container">
+                <div class="relative text-center">
+                    <span class="absolute top-[-55px] font-Merriweather font-bold left-[28%] text-[70px] opacity-[0.1] text-[#eee]">TESTIMONIALS</span>
+                    <h2 class="text-4xl pb-5 mb-5 font-Merriweather font-bold text-white
+                     before:absolute before:content-[''] before:bottom-[-2px] before:left-[50%] before:ml-[-25px]
+                      before:bg-theme-color before:w-[50px] before:rounded-md before:h-[4px] ">What People Say</h2>
+                </div>
+                <p class="text-center mb-12 text-white font-Poppins w-[45%] mx-auto">There are many variations
+                    of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                <div class="multiple-items">
+                   <div class="group mx-3">
+                    <div class="text-center border relative group-hover:bg-white duration-700" style="height:auto;">
+                        <i class="fa-solid fa-quote-right text-white text-4xl my-5 group-hover:text-theme-color"></i>
+                        <p class="text-white w-[62%] m-auto leading-6 mb-5 group-hover:text-black">"It’s amazing how much easier it has been to meet new people and create instant connections."</p>
+                            <img src="../images/testi1.jpg" alt="testi1" class="w-[70px] h-[70px] rounded-full border-[6px] 
+                                        border-solid border-border-color inline-block group-hover:border-theme-color">
+                        <h3 class="text-base text-white font-medium font-Merriweather mt-2 group-hover:text-black">Jane Anderson</h3>
+                        <p class="text-white mb-2 group-hover:text-black">Cancer client</p>
+                    </div>
+                   </div>   
+                   <div class="group mx-3">
+                    <div class="text-center border relative group-hover:bg-white duration-700" style="height:auto;">
+                        <i class="fa-solid fa-quote-right text-white text-4xl my-5 group-hover:text-theme-color"></i>
+                        <p class="text-white w-[62%] m-auto leading-6 mb-5 group-hover:text-black">"It’s amazing how much easier it has been to meet new people and create instant connections."</p>
+                            <img src="../images/testi2.jpg" alt="testi1" class="w-[70px] h-[70px] rounded-full border-[6px] 
+                                        border-solid border-border-color inline-block group-hover:border-theme-color">
+                        <h3 class="text-base text-white font-medium font-Merriweather mt-2 group-hover:text-black">Paul Flavius</h3>
+                        <p class="text-white mb-2 group-hover:text-black">Heather</p>
+                    </div>
+                   </div>
+                   <div class="group mx-3">
+                    <div class="text-center border relative group-hover:bg-white duration-700" style="height:auto;">
+                        <i class="fa-solid fa-quote-right text-white text-4xl my-5 group-hover:text-theme-color"></i>
+                        <p class="text-white w-[62%] m-auto leading-6 mb-5 group-hover:text-black">"It’s amazing how much easier it has been to meet new people and create instant connections."</p>
+                            <img src="../images/testi3.jpg" alt="testi1" class="w-[70px] h-[70px] rounded-full border-[6px] 
+                                        border-solid border-border-color inline-block group-hover:border-theme-color">
+                        <h3 class="text-base text-white font-medium font-Merriweather mt-2 group-hover:text-black">Harry Russel</h3>
+                        <p class="text-white mb-2 group-hover:text-black">Surgery client</p>
+                    </div>
+                   </div>
+                    <div class="group mx-3">
+                        <div class="text-center border relative group-hover:bg-white duration-700" style="height:auto;">
+                            <i class="fa-solid fa-quote-right text-white text-4xl my-5 group-hover:text-theme-color"></i>
+                            <p class="text-white w-[62%] m-auto leading-6 mb-5 group-hover:text-black">"It’s amazing how much easier it has been to meet new people and create instant connections."</p>
+                                <img src="../images/testi4.jpg" alt="testi1" class="w-[70px] h-[70px] rounded-full border-[6px] 
+                                            border-solid border-border-color inline-block group-hover:border-theme-color">
+                            <h3 class="text-base text-white font-medium font-Merriweather mt-2 group-hover:text-black">Alice Williams</h3>
+                            <p class="text-white mb-2 group-hover:text-black">Mother</p>
+                        </div>
+                    </div>
+                   <div class="group mx-3">
+                    <div class="text-center border relative group-hover:bg-white duration-700" style="height:auto;">
+                        <i class="fa-solid fa-quote-right text-white text-4xl my-5 group-hover:text-theme-color"></i>
+                        <p class="text-white w-[62%] m-auto leading-6 mb-5 group-hover:text-black">"It’s amazing how much easier it has been to meet new people and create instant connections."</p>
+                            <img src="../images/testi1.jpg" alt="testi1" class="w-[70px] h-[70px] rounded-full border-[6px] 
+                                        border-solid border-border-color inline-block group-hover:border-theme-color">
+                        <h3 class="text-base text-white font-medium font-Merriweather mt-2 group-hover:text-black">Jane Anderson</h3>
+                        <p class="text-white mb-2 group-hover:text-black">Cancer client</p>
+                    </div>
+                   </div>
+                   <div class="group mx-3">
+                    <div class="text-center border relative group-hover:bg-white duration-700" style="height:auto;">
+                        <i class="fa-solid fa-quote-right text-white text-4xl my-5 group-hover:text-theme-color"></i>
+                        <p class="text-white w-[62%] m-auto leading-6 mb-5 group-hover:text-black">"It’s amazing how much easier it has been to meet new people and create instant connections."</p>
+                            <img src="../images/testi2.jpg" alt="testi1" class="w-[70px] h-[70px] rounded-full border-[6px] 
+                                        border-solid border-border-color inline-block group-hover:border-theme-color">
+                        <h3 class="text-base text-white font-medium font-Merriweather mt-2 group-hover:text-black">Paul Flavius</h3>
+                        <p class="text-white mb-2 group-hover:text-black">Heather</p>
+                    </div>
+                   </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- team -->
+
+        <section class="py-24">
+            <div class="container">
+                <div class="relative text-center">
+                    <span class="absolute top-[-50px] left-[37%] text-[80px] opacity-[0.4] font-Merriweather text-[#eee] font-bold">DOCTORS</span>
+                    <h2 class="text-4xl w-[45%] pb-5 mb-5 m-auto font-Merriweather font-bold text-black leading-tight
+                     before:absolute before:content-[''] before:bottom-[-2px] before:left-[50%] before:ml-[-25px]
+                      before:bg-theme-color before:w-[50px] before:rounded-md before:h-[4px] ">Our Outstanding Team Is Active To Help You!</h2>
+                </div>
+                <p class="text-center mb-12 text-text-color font-Poppins w-[45%] mx-auto">There are many variations
+                    of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+               <div class="flex flex-wrap">
+                    <div class="w-3/12">
+                        <div class="relative group overflow-hidden" style="margin-right:20px;">
+                            <img src="../images/doctor1.jpg" alt="doctor1">
+                                <ul class="absolute bottom-[-100px] start-0 flex bg-dark-green w-full justify-center py-3 group-hover:bottom-0 ease-in duration-300">
+                                    <li class="ms-2">
+                                        <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-facebook-fill text-white hover:text-gray-400"></i></a>
+                                    </li>
+                                    <li class="ms-2">
+                                        <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-twitter-fill text-white hover:text-gray-400"></i></a>
+                                    </li>
+                                    <li class="ms-2">
+                                        <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-instagram-fill text-white hover:text-gray-400"></i></a>
+                                    </li>
+                                    <li class="ms-2">
+                                        <a href="javascript:void(0)" class="text-lg inline-block"> <i class="ri-youtube-fill text-white hover:text-gray-400"></i></a>
+                                    </li>
+                                </ul>      
+                            </div>
+                            <div class="content bg-[#f9f9f9] text-center py-7 px-5 border" style="margin-right:20px;">
+                                <h4 class="text-theme-color font-serif font-medium">Cardiologist</h4>
+                                <h2 class="text-dark-green font-Merriweather font-semibold text-lg">Dr.Felica Queen</h2>
+                            </div>
+                        </div>
+                        <div class="w-3/12">
+                            <div class="relative group overflow-hidden" style="margin-right:20px;">
+                                <img src="../images/doctor2.jpg" alt="doctor1">
+                                    <ul class="absolute bottom-[-100px] start-0 flex bg-dark-green w-full justify-center py-3 group-hover:bottom-0 ease-in duration-300">
+                                        <li class="ms-2">
+                                            <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-facebook-fill text-white hover:text-gray-400"></i></a>
+                                        </li>
+                                        <li class="ms-2">
+                                            <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-twitter-fill text-white hover:text-gray-400"></i></a>
+                                        </li>
+                                        <li class="ms-2">
+                                            <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-instagram-fill text-white hover:text-gray-400"></i></a>
+                                        </li>
+                                        <li class="ms-2">
+                                            <a href="javascript:void(0)" class="text-lg inline-block"> <i class="ri-youtube-fill text-white hover:text-gray-400"></i></a>
+                                        </li>
+                                    </ul>      
+                                </div>
+                                <div class="content bg-[#f9f9f9] text-center py-7 px-5 border" style="margin-right:20px;">
+                                    <h4 class="text-theme-color font-serif font-medium">Neurologist</h4>
+                                    <h2 class="text-dark-green font-Merriweather font-semibold text-lg">Dr.Alice Williams</h2>
+                                </div>
+                            </div>
+                            <div class="w-3/12">
+                                <div class="relative group overflow-hidden" style="margin-right:20px;">
+                                    <img src="../images/doctor3.jpg" alt="doctor1">
+                                        <ul class="absolute bottom-[-100px] start-0 flex bg-dark-green w-full justify-center py-3 group-hover:bottom-0 ease-in duration-300">
+                                            <li class="ms-2">
+                                                <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-facebook-fill text-white hover:text-gray-400"></i></a>
+                                            </li>
+                                            <li class="ms-2">
+                                                <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-twitter-fill text-white hover:text-gray-400"></i></a>
+                                            </li>
+                                            <li class="ms-2">
+                                                <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-instagram-fill text-white hover:text-gray-400"></i></a>
+                                            </li>
+                                            <li class="ms-2">
+                                                <a href="javascript:void(0)" class="text-lg inline-block"> <i class="ri-youtube-fill text-white hover:text-gray-400"></i></a>
+                                            </li>
+                                        </ul>      
+                                    </div>
+                                    <div class="content bg-[#f9f9f9] text-center py-7 px-5 border" style="margin-right:20px;">
+                                        <h4 class="text-theme-color font-serif font-medium">Physician Assistant</h4>
+                                        <h2 class="text-dark-green font-Merriweather font-semibold text-lg">Dr.Paul Flavius</h2>
+                                    </div>
+                                </div>
+                                <div class="w-3/12">
+                                    <div class="relative group overflow-hidden" style="margin-right:20px;">
+                                        <img src="../images/doctor4.jpg" alt="doctor1">
+                                            <ul class="absolute bottom-[-100px] start-0 flex bg-dark-green w-full justify-center py-3 group-hover:bottom-0 ease-in duration-300">
+                                                <li class="ms-2">
+                                                    <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-facebook-fill text-white hover:text-gray-400"></i></a>
+                                                </li>
+                                                <li class="ms-2">
+                                                    <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-twitter-fill text-white hover:text-gray-400"></i></a>
+                                                </li>
+                                                <li class="ms-2">
+                                                    <a href="javascript:void(0)" class="text-lg inline-block"><i class="ri-instagram-fill text-white hover:text-gray-400"></i></a>
+                                                </li>
+                                                <li class="ms-2">
+                                                    <a href="javascript:void(0)" class="text-lg inline-block"> <i class="ri-youtube-fill text-white hover:text-gray-400"></i></a>
+                                                </li>
+                                            </ul>      
+                                        </div>
+                                        <div class="content bg-[#f9f9f9] text-center py-7 px-5 border" style="margin-right:20px;">
+                                            <h4 class="text-theme-color font-serif font-medium">Physician Assistant</h4>
+                                            <h2 class="text-dark-green font-Merriweather font-semibold text-lg">Dr.Michael Bean</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+
+        <!-- work -->
+
+        <section class="py-24 work">
+            <div class="flex flex-wrap">
+                <div class="w-1/3">
+                    <div class="bg-dark-green py-[60px] px-[55px] text-center work-content">
+                        <i class="fa-solid fa-calendar-week w-20 h-20 leading-[80px] rounded-full shadow text-white text-3xl  items-center justify-center"></i>
+                        <h3 class="text-white text-[22px] font-semibold font-Merriweather mt-5">Best Monitoring System</h3>
+                        <p class="text-white mt-5 w-[87%] m-auto">Despite advances in technology and understanding of 
+                        biological systems, drug discovery is still a lengthy, expensive.</p>
+                    </div>
+                </div>
+                <div class="w-1/3">
+                    <div class="bg-[url('../images/bg.jpg')] bg-cover bg-center bg-no-repeat w-full h-full z-10
+                     relative before:absolute before:content-[''] before:top-0 before:left-0
+                      before:bg-work-bg before:w-full before:h-full before:opacity-90">
+                        <div class="py-[60px] px-[55px] text-center work-content absolute top-0 left-0">
+                            <i class="fa-solid fa-hospital w-20 h-20 leading-[80px] rounded-full shadow text-white text-3xl  items-center justify-center"></i>
+                            <h3 class="text-white text-[22px] font-semibold font-Merriweather mt-5">Advanced Operating Room</h3>
+                            <p class="text-white mt-5 w-[87%] m-auto">Despite advances in technology and understanding of 
+                            biological systems, drug discovery is still a lengthy, expensive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/3">
+                    <div class="bg-theme-color py-[60px] px-[55px] text-center work-content">
+                        <i class="fa-solid fa-stethoscope w-20 h-20 leading-[80px] rounded-full shadow text-white text-3xl  items-center justify-center"></i>
+                        <h3 class="text-white text-[22px] font-semibold font-Merriweather mt-5">Only Best Doctors</h3>
+                        <p class="text-white mt-5 w-[87%] m-auto">Despite advances in technology and understanding of 
+                        biological systems, drug discovery is still a lengthy, expensive.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blog -->
+
+        <section class="py-24">
+            <div class="container">
+                <div class="relative text-center">
+                    <span class="absolute top-[-50px] left-[39%] text-[80px] opacity-[0.4] font-Merriweather font-bold text-[#eee]">BLOGS</span>
+                    <h2 class="text-4xl w-[45%] pb-5 mb-5 m-auto font-Merriweather font-bold text-black leading-tight before:ml-[-25px]
+                     before:absolute before:content-[''] before:bottom-[-2px] before:left-[50%]
+                      before:bg-theme-color before:w-[50px] before:rounded-md before:h-[4px] ">Latest News</h2>
+                </div>
+                <p class="text-center mb-12 text-text-color font-Poppins w-[45%] mx-auto">There are many variations
+                    of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                <div class="flex flex-wrap">
+                    <div class="w-2/4">
+                        <div class="group">
+                            <div class="flex flex-wrap">
+                                <div class="w-2/5">
+                                    <div class="overflow-hidden">
+                                        <img src="../images/blog1.jpg" alt="blog1" class="group-hover:scale-110 duration-300">
+                                    </div>
+                                </div>
+                                <div class="w-2/4">
+                                    <div class="border w-full h-full p-7">
+                                        <h3><a href="javascript:void(0)" class="inline-block font-Merriweather text-lg font-semibold hover:text-dark-green">These blood markers may higher risk of disease</a></h3>
+                                        <p class="text-text-color mt-5 mb-5">The price is something not defined as financial. It could be time.</p>
+                                        <div class="flex">
+                                            <a href="javascript:void(0)" class="inline-block">
+                                                <img src="../images/comment1.jpg" alt="comment1" class="w-7 h-7 rounded-full ms-0">
+                                            </a>
+                                            <a href="javascript:void(0)" class="inline-block ms-3 text-text-color hover:text-dark-green">Alice Williams</a>
+                                            <a href="javascript:void(0)" class="inline-block ms-3 text-text-color hover:text-dark-green">08 Mar 2023</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-7 group">
+                            <div class="flex flex-wrap">
+                                <div class="w-2/5">
+                                    <div class="overflow-hidden">
+                                        <img src="../images/blog2.jpg" alt="blog2" class="group-hover:scale-110 duration-300">
+                                    </div>
+                                </div>
+                                <div class="w-2/4">
+                                    <div class="border w-full h-full p-7">
+                                        <h3><a href="javascript:void(0)" class="inline-block font-Merriweather text-lg font-semibold hover:text-dark-green">Brushing your teeth may keep your heart healthy</a></h3>
+                                        <p class="text-text-color mt-5 ">The price is something not defined as financial. It could be time.</p>
+                                        <div class="flex mt-6">
+                                            <a href="javascript:void(0)" class="inline-block">
+                                                <img src="../images/comment2.jpg" alt="comment2" class="w-7 h-7 rounded-full ms-0">
+                                            </a>
+                                            <a href="javascript:void(0)" class="inline-block ms-3 text-text-color hover:text-dark-green">Alrado Deyam</a>
+                                            <a href="javascript:void(0)" class="inline-block ms-3 text-text-color hover:text-dark-green">10 Feb 2023</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-2/4">
+                        <div class="group">
+                            <div class="overflow-hidden">
+                                <img src="../images/blog3.jpg" alt="blog3" class="w-full h-full group-hover:scale-110 duration-300">
+                            </div>
+                            <div>
+                                <div class="bg-dark-green w-full h-full p-9">
+                                    <a href="javascript:void(0)" class="inline-block text-white font-Merriweather text-lg font-semibold hover:underline">Using anthrax to fight cancer effectively.</a>
+                                    <p class="text-white mt-5 w-[82%]">The price is something not necessarily defined as financial. It could be time, effort and sacrifice.</p>
+                                    <div class="flex mt-6">
+                                        <a href="javascript:void(0)" class="inline-block">
+                                            <img src="../images/comment3.jpg" alt="comment2" class="w-7 h-7 rounded-full ms-0">
+                                        </a>
+                                        <a href="javascript:void(0)" class="inline-block ms-3 hover:text-gray-300  text-white"> Zenifer Suie</a>
+                                        <a href="javascript:void(0)" class="inline-block ms-3 hover:text-gray-300 text-white">02 Jan 2023</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="bg-[url('../images/footer-bg.jpg')]  bg-cover z-10 bg-no-repeat w-full relative py-24 before:absolute
+     before:content-[''] before:top-0 before:left-0 before:bg-dark-green before:-z-10 before:opacity-90 before:w-full before:h-full">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-2/4">
+                    <div>
+                        <h3 class="text-white font-Merriweather font-semibold mb-5 text-xl">Need Help?</h3>
+                        <p class="text-white text-base">Please feel free to contact our friendly reception staff with any medical enquiry, or</p>
+                        <span class="text-white">call<a href="javascript:void(0)" class="text-theme-color underline inline-block ms-2 hover:text-white duration-300">+880 12345678901</a></span>
+                    </div>
+                </div>
+                <div class="w-2/4">
+                    <div class="">
+                        <h3 class="text-white font-Merriweather font-semibold text-xl mb-5">Subscribe Newsletter</h3>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email address" name="Email"
+                            class="h-[50px] w-96 inline-block bg-placeholder-color border-none pl-[50px] pr-[20px]">
+                            <a href="javascript:void(0)"class=" inline-block font-sans bg-theme-color hover:text-black pt-3 px-7 text-white font-medium 
+                            relative z-10 before:content-[''] before:absolute before:top-0 before:start-0 before:ease-in 
+                            before:duration-300 before:bg-white before:text-black before:-z-50 before:w-0 before:h-full before:hover:w-full">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+           <div class="border mb-7  mt-24">
+                <div class="container mx-auto">
+                    <div class="flex flex-wrap">
+                        <div class="w-3/12">
+                           <div class="border-r h-full py-24">
+                                <div>
+                                    <a href="javascript:void(0)"><img src="../images/white-logo.svg" alt="white-logo" class="w-[180px]"></a>
+                                </div>
+                                <p class="text-white mt-3 font-medium w-[73%]">There’s nothing in this story to make us think he was dreaming about riches.</p>
+                                <ul class="mt-[30px] flex">
+                                    <li class="mr-2"><a href="#" class="bg-white text-dark-green w-[30px] h-[30px] p-2 hover:rounded-full duration-300 ease-in"><i class="ri-facebook-fill"></i></a></li>
+                                    <li class="mr-2"><a href="#" class="bg-white text-dark-green w-[30px] h-[30px] p-2 hover:rounded-full duration-300 ease-in"><i class="ri-twitter-fill"></i></a></li>
+                                    <li class="mr-2"><a href="#" class="bg-white text-dark-green w-[30px] h-[30px] p-2 hover:rounded-full duration-300 ease-in"><i class="ri-instagram-line"></i></a></li>
+                                    <li class="mr-2"><a href="#" class="bg-white text-dark-green w-[30px] h-[30px] p-2 hover:rounded-full duration-300 ease-in"><i class="ri-linkedin-box-fill"></i></a></li>
+                                    <li class="mr-2"><a href="#" class="bg-white text-dark-green w-[30px] h-[30px] p-2 hover:rounded-full duration-300 ease-in"><i class="ri-youtube-fill"></i></a></li>
+                                </ul>
+                           </div>
+                        </div>
+                        <div class="w-3/12">
+                            <div class="border-r h-full py-24 ps-6">
+                                <h2 class="font-Merriweather text-white text-lg font-semibold mb-9">Useful Links</h2>
+                            <div class="flex flex-wrap">
+                               <div class="w-1/2">
+                                    <ul>
+                                        <li class="mb-3"><a href="#" class="text-white hover:underline">About</a></li>
+                                        <li class="mb-3"><a href="#" class="text-white hover:underline">Team</a></li>
+                                        <li class="mb-3"><a href="#" class="text-white hover:underline">Before After</a></li>
+                                        <li class="mb-3"><a href="#" class="text-white hover:underline">Cost Calculator</a></li>
+                                        <li class="mb-3"><a href="#" class="text-white hover:underline">Working Hours</a></li>
+                                    </ul>
+                               </div>
+                                <div class="w-1/2">
+                                    <ul>
+                                        <li class="mb-3"><a href="#" class="text-white hover:underline">Appointment</a></li>
+                                        <li class="mb-3"><a href="#" class="text-white hover:underline">Gallery</a></li>
+                                        <li class="mb-3"><a href="#" class="text-white hover:underline">Timetable</a></li>
+                                        <li class="mb-3"><a href="#" class="text-white hover:underline">Departments</a></li>
+                                        <li class="mb-3"><a href="#" class="text-white hover:underline">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="w-3/12">
+                           <div class="border-r h-full py-24 ps-6 ">
+                                <h2 class="font-Merriweather text-white text-lg font-semibold mb-9">Opening Hours</h2>
+                                <div class="flex flex-wrap">
+                                <div class="w-1/2">
+                                        <ul>
+                                            <li class="mb-4"><a href="#" class="text-white"><i class="ri-timer-flash-line mx-2 ms-0"></i>Mon-Tue</a></li>
+                                            <li class="mb-4"><a href="#" class="text-white"><i class="ri-timer-flash-line mx-2 ms-0"></i>Web-Thu</a></li>
+                                            <li class="mb-4"><a href="#" class="text-white"><i class="ri-timer-flash-line mx-2 ms-0"></i>Friday</a></li>
+                                            <li class="mb-4"><a href="#" class="text-white"><i class="ri-timer-flash-line mx-2 ms-0"></i>Saturday</a></li>
+                                        </ul>
+                                </div>
+                                    <div class="w-1/2">
+                                        <ul>
+                                            <li class="text-white mb-4">08:30 - 18:30</li>
+                                            <li class="text-white mb-4">08:30 - 18:30</li>
+                                            <li class="text-white mb-4">08:30 - 18:30</li>
+                                            <li class="text-white mb-4">08:30 - 18:30</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="w-3/12">
+                           <div class="py-24 ps-6">
+                                <h2 class="font-Merriweather text-white text-lg font-semibold mb-9">Contact</h2>
+                                <ul>
+                                    <li class="text-white mb-0"><i class="ri-map-pin-line mx-2 ms-0"></i>23 New Design Str, Lorem Upsum 10</li>
+                                    <li class="text-white ms-4 mb-4">Hudson Yards, USA</li>
+                                    <li class="text-white mb-4"><i class="ri-phone-line mx-2 ms-0"></i>Tel. +(123) 1800-567-8990</li>
+                                    <li class="text-white mb-4"><i class="ri-mail-line mx-2 ms-0"></i>Mail. support@classigrids.com</li>
+                                </ul>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="container mx-auto">
+                <div class="flex justify-between">
+                    <p class="text-white">Designed and Developed by <a href="javascript:void(0)" class="hover:underline">GrayGrids</a></p>
+                    <div>
+                        <a href="javascript:void(0)" class="text-white hover:underline">Terms & Conditions</a>
+                        <a href="javascript:void(0)" class="text-white mx-2 hover:underline">FAQ</a>
+                        <a href="javascript:void(0)" class="text-white hover:underline">Privacy Policy</a>
+                    </div>
+            </div>
+           </div>
+    </footer>
+
+    <!-- j-query cdn -->
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <!-- swiper-slider -->
+    <script src="swiper-bundle.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.js" type="text/javascript"></script>
+    <!-- slick-slider -->
+    <script src="slick.min.js" type="text/javascript"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // nav and tabs
+
+        $(function () {
+            $("#tabs").tabs();
+        });
+
+        // counter
+
+        let count = document.querySelectorAll(".count")
+        let arr = Array.from(count)
+
+        arr.map(function(item){
+        let startnumber = 0
+
+        function counterup(){
+        startnumber++
+        item.innerHTML= startnumber
+        
+        if(startnumber == item.dataset.number){
+            clearInterval(stop)
+        }
+        }
+
+        let stop =setInterval(function(){
+        counterup()
+        },0.001)
+
+        })  
+
+        // nav and tabs
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            document.querySelectorAll('.tab-pane').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            this.classList.add('active');
+            const target = document.querySelector(this.getAttribute('href'));
+            target.classList.add('active');
+        });
+    });
+
+        // slick slider
+
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+
+          // back to top
+
+          if($(this).scrollTop() > 50){
+                $('.back-to-top').fadeIn(1000);
+            }
+            else{
+                $('.back-to-top').fadeOut(1000);
+            }
+
+        $(document).ready(function(){
+            $('.back-to-top').click(function(){
+                $('html').animate({scrollTop : 0})  
+            })
+        });
+    </script>
+</body>
+
+</html>
